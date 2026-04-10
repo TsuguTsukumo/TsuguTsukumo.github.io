@@ -233,6 +233,17 @@ body {
   padding-bottom: 0;
 }
 
+.year-block::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  background: #ffffff;
+  border: 2px solid var(--accent);
+  box-shadow: 0 0 0 3px rgba(210, 108, 47, 0.08);
+  margin-bottom: 4px;
+}
+
 .year-block::after {
   content: "";
   width: 2px;
