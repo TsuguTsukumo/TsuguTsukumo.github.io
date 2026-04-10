@@ -278,6 +278,10 @@ body {
   border-bottom-color: var(--accent);
 }
 
+.media-link {
+  margin-top: 10px;
+}
+
 
 .project-grid {
   display: grid;
