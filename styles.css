@@ -254,7 +254,8 @@ body {
 #presentations .timeline::before {
   content: "";
   position: absolute;
-  left: 45px;
+  left: 50%;
+  transform: translateX(-50%);
   top: 18px;
   bottom: 18px;
   width: 2px;
