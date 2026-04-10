@@ -223,7 +223,26 @@ body {
 
 .year-block {
   display: grid;
-  gap: 4px;
+  gap: 2px;
+  justify-items: center;
+  position: relative;
+  padding-bottom: 18px;
+}
+
+.timeline-item:last-child .year-block {
+  padding-bottom: 0;
+}
+
+.year-block::after {
+  content: "";
+  width: 2px;
+  height: 18px;
+  background: var(--border);
+  margin-top: 6px;
+}
+
+.timeline-item:last-child .year-block::after {
+  display: none;
 }
 
 .year {
@@ -232,8 +251,9 @@ body {
 }
 
 .month {
-  font-size: 0.75rem;
-  color: var(--muted);
+  font: inherit;
+  font-weight: 600;
+  color: var(--accent);
 }
 
 .section-action {
