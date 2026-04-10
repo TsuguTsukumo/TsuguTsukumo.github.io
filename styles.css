@@ -278,6 +278,25 @@ body {
   border-bottom-color: var(--accent);
 }
 
+.video-embed {
+  margin-top: 12px;
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+  border: 2px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+  background: #000;
+}
+
+.video-embed iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
 .project-grid {
   display: grid;
   gap: 18px;
