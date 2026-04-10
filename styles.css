@@ -126,15 +126,30 @@ body {
 }
 
 .photo-placeholder {
-  width: 160px;
-  height: 200px;
+  width: 180px;
+  height: 220px;
   border: 2px dashed var(--border);
-  border-radius: 16px;
+  border-radius: 18px;
   display: grid;
   place-items: center;
   color: var(--muted);
   font-size: 0.9rem;
   margin: 18px 0 10px;
+}
+
+.hero-photo {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(140deg, rgba(210, 108, 47, 0.08), rgba(26, 166, 160, 0.08));
+  box-shadow: 0 16px 32px rgba(18, 20, 23, 0.12);
+}
+
+.hero-photo::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 1px solid rgba(18, 20, 23, 0.08);
+  border-radius: 18px;
 }
 
 .meta-label {
