@@ -182,6 +182,14 @@ body {
 
 .hero-photo {
   align-self: center;
+  width: 180px;
+}
+
+@media (max-width: 900px) {
+  .hero-copy {
+    align-items: center;
+    text-align: center;
+  }
 }
 
 .orb {
