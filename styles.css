@@ -97,7 +97,6 @@ img {
   background: rgba(22, 66, 64, 0.14);
 }
 
-.site-nav,
 .site-header,
 main,
 .site-footer {
@@ -113,7 +112,7 @@ main,
   align-items: center;
   justify-content: space-between;
   gap: 1.5rem;
-  margin: 1rem auto 0;
+  margin-top: 1rem;
   padding: 1rem 1.2rem;
   background: rgba(250, 249, 246, 0.72);
   border: 1px solid rgba(11, 44, 43, 0.08);
@@ -151,7 +150,6 @@ main,
 .brand strong {
   font-size: 0.95rem;
   line-height: 1.2;
-  white-space: nowrap;
 }
 
 .brand small {
@@ -159,7 +157,6 @@ main,
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--muted);
-  white-space: nowrap;
 }
 
 .nav-links {
@@ -173,7 +170,6 @@ main,
 .nav-links a {
   color: var(--muted);
   font-size: 0.92rem;
-  white-space: nowrap;
   transition: color 180ms ease;
 }
 
@@ -234,20 +230,15 @@ main,
 .hero {
   display: grid;
   grid-template-columns: minmax(0, 1.15fr) minmax(320px, 0.85fr);
-  grid-template-areas:
-    "copy visual"
-    "summary visual";
   gap: 3rem;
-  align-items: start;
+  align-items: center;
   min-height: calc(100vh - 6rem);
-  padding: 3.4rem 0 3.5rem;
+  padding: 4.5rem 0 3.5rem;
 }
 
 .hero-copy {
-  grid-area: copy;
   display: grid;
   gap: 1.25rem;
-  align-self: center;
 }
 
 .eyebrow,
@@ -331,10 +322,6 @@ main,
 .project h3,
 .focus-card h2 {
   font-family: var(--font-display);
-  text-wrap: balance;
-  word-break: normal;
-  overflow-wrap: normal;
-  hyphens: none;
 }
 
 .hero-title {
@@ -437,16 +424,8 @@ main,
 }
 
 .hero-visual {
-  grid-area: visual;
   position: relative;
   padding: 1rem 0 4rem 2rem;
-  align-self: center;
-}
-
-.hero-summary {
-  grid-area: summary;
-  display: grid;
-  gap: 1rem;
 }
 
 .portrait-shell {
@@ -541,10 +520,6 @@ main,
 
 .section {
   padding: 6rem 0;
-}
-
-section[id] {
-  scroll-margin-top: 7.5rem;
 }
 
 .section-alt {
@@ -830,9 +805,6 @@ section[id] {
 .contact-details a {
   text-decoration: none;
   border-bottom: 1px solid rgba(210, 90, 70, 0.35);
-  word-break: normal;
-  overflow-wrap: normal;
-  hyphens: none;
 }
 
 .archive-cluster {
@@ -960,7 +932,7 @@ section[id] {
 }
 
 .contact-section {
-  padding-top: 1.5rem;
+  padding-top: 3rem;
 }
 
 .contact-panel {
@@ -1071,22 +1043,15 @@ section[id] {
   .archive-layout,
   .contact-panel {
     grid-template-columns: 1fr;
-    grid-template-areas: none;
   }
 
   .hero {
     min-height: auto;
     padding-top: 3rem;
-    grid-template-areas:
-      "copy"
-      "visual"
-      "summary";
-    gap: 1.8rem;
   }
 
   .hero-visual {
-    padding: 0 0 1rem;
-    max-width: min(30rem, 100%);
+    padding: 0 0 4rem;
   }
 
   .archive-sidebar {
@@ -1151,41 +1116,16 @@ section[id] {
   }
 
   .site-nav {
-    flex-wrap: wrap;
-    align-items: flex-start;
-    gap: 0.85rem;
-    padding: 0.85rem 0.95rem;
-    border-radius: 28px;
+    position: static;
+    margin-top: 0.8rem;
   }
 
   .brand {
     width: 100%;
   }
 
-  .nav-links {
-    flex: 1 1 100%;
-    width: 100%;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    justify-content: flex-start;
-    gap: 0.75rem;
-    padding-bottom: 0.15rem;
-    scrollbar-width: none;
-  }
-
-  .nav-links::-webkit-scrollbar {
-    display: none;
-  }
-
-  .nav-links a {
-    flex: 0 0 auto;
-  }
-
-  .button-nav {
-    min-height: 2.6rem;
-    padding: 0.55rem 0.95rem;
-  }
-
+  .site-nav,
+  .nav-links,
   .cta-row,
   .site-footer {
     flex-direction: column;
@@ -1203,10 +1143,6 @@ section[id] {
 
   .section {
     padding: 4.5rem 0;
-  }
-
-  section[id] {
-    scroll-margin-top: 8.5rem;
   }
 
   .focus-card {
