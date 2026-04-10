@@ -244,25 +244,20 @@ body {
 
 #presentations .timeline-item {
   position: relative;
+  background: var(--card);
+  z-index: 1;
 }
 
-#presentations .timeline-item::before {
+#presentations .timeline::before {
   content: "";
   position: absolute;
   left: 34px;
-  top: -20px;
-  bottom: -20px;
+  top: 18px;
+  bottom: 18px;
   width: 1.5px;
   background: var(--border);
 }
 
-#presentations .timeline-item:first-child::before {
-  top: 18px;
-}
-
-#presentations .timeline-item:last-child::before {
-  bottom: 18px;
-}
 
 .section-action {
   margin-top: 24px;
