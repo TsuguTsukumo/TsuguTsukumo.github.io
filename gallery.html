@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Photo Gallery | Tsukumo Tsuguhiro</title>
+    <meta
+      name="description"
+      content="研究活動や人物像が伝わる写真をまとめたギャラリーページ。ポートレートを中心に、今後の研究記録も追加できる構成です。"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,600;9..144,800&family=Space+Grotesk:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="gallery-page">
+    <div class="noise"></div>
+    <header class="hero page-hero" id="top">
+      <nav class="nav">
+        <a class="brand brand-link" href="index.html"><span class="name-en">Tsukumo Tsuguhiro</span> / 白 承容</a>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="index.html#research">Research</a>
+          <a href="gallery.html" class="is-current">Gallery</a>
+          <a href="index.html#contact" class="btn">Contact</a>
+        </div>
+      </nav>
+
+      <div class="page-hero-grid">
+        <div class="page-copy" data-animate>
+          <p class="eyebrow">Photo Gallery</p>
+          <h1>
+            <span class="hero-name-line">Research Moments</span>
+            <span class="hero-name-line">and Portraits</span>
+            <span class="hero-name-line accent">Gallery</span>
+          </h1>
+          <p class="page-lead">
+            研究活動の空気感や人物像が伝わる写真を、このページにまとめていきます。
+            まずはポートレートを掲載し、今後は研究室、発表、日々の記録も追加しやすい構成にしています。
+          </p>
+          <div class="cta-row">
+            <a class="btn primary" href="#selected-photo">写真を見る</a>
+            <a class="btn ghost" href="index.html">ポートフォリオへ戻る</a>
+          </div>
+        </div>
+
+        <div class="page-side" data-animate>
+          <article class="card">
+            <p class="card-title">Collection Note</p>
+            <ul>
+              <li>Portrait and research identity</li>
+              <li>Scenes from lab and conference work</li>
+              <li>Independent page for future photo additions</li>
+            </ul>
+            <div class="card-footer">
+              <span>View</span>
+              <span>Fullscreen available</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section" id="selected-photo">
+        <div class="section-head" data-animate>
+          <p class="eyebrow">Selected Photo</p>
+          <h2>現在のポートレート</h2>
+          <p>
+            研究者としての現在地が伝わる写真を中心に据えています。
+            クリックすると大きな表示で確認できます。
+          </p>
+        </div>
+
+        <div class="gallery-shell" data-animate>
+          <figure class="gallery-feature card">
+            <button
+              type="button"
+              class="gallery-media-button"
+              data-gallery-modal
+              data-gallery-src="IMG_1524.jpeg"
+              data-gallery-alt="Tsukumo Tsuguhiro / 白 承容"
+              data-gallery-caption="Tsukumo Tsuguhiro / 白 承容"
+            >
+              <img
+                class="gallery-image"
+                src="IMG_1524.jpeg"
+                alt="Tsukumo Tsuguhiro / 白 承容"
+              />
+            </button>
+            <figcaption class="gallery-caption">
+              <div>
+                <p class="gallery-caption-title">Portrait</p>
+                <p>
+                  研究の紹介ページと連動するメインポートレート。
+                  個人の印象と研究者としての静かなトーンを両立させています。
+                </p>
+              </div>
+              <span class="tag">Click to Expand</span>
+            </figcaption>
+          </figure>
+
+          <div class="gallery-side-stack">
+            <article class="gallery-panel card">
+              <p class="card-title">Gallery Direction</p>
+              <p>
+                ポートフォリオ本体とは分けて、写真だけを落ち着いて見られるページにしています。
+                研究内容の補足ではなく、人物像と活動の雰囲気を伝える役割です。
+              </p>
+            </article>
+
+            <article class="gallery-panel card">
+              <p class="card-title">Planned Additions</p>
+              <ul class="gallery-list">
+                <li>研究室での作業風景</li>
+                <li>学会発表や移動先での記録</li>
+                <li>プロジェクトの現場感が伝わるスナップ</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt">
+        <div class="section-head" data-animate>
+          <p class="eyebrow">Why Separate</p>
+          <h2>写真を独立ページにした理由</h2>
+          <p>
+            研究実績の流れを崩さずに、写真だけを別テンポで見られるようにしています。
+            必要に応じて写真枚数が増えても、トップページの情報量を圧迫しません。
+          </p>
+        </div>
+
+        <div class="gallery-info-grid" data-animate>
+          <article class="gallery-panel card">
+            <p class="card-title">Clear Navigation</p>
+            <p>
+              トップページから独立させることで、研究実績とビジュアルアーカイブを切り分けています。
+            </p>
+          </article>
+          <article class="gallery-panel card">
+            <p class="card-title">Quiet Presentation</p>
+            <p>
+              写真のページでは余白を多めに確保し、1 枚ごとの印象が薄まらない見せ方にしています。
+            </p>
+          </article>
+          <article class="gallery-panel card">
+            <p class="card-title">Ready to Grow</p>
+            <p>
+              今後、画像を追加してもレイアウトを崩さずに拡張できる構成です。
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <div class="gallery-modal" data-gallery-lightbox hidden>
+      <button type="button" class="gallery-modal-close" data-gallery-close aria-label="Close photo viewer">
+        Close
+      </button>
+      <div class="gallery-modal-dialog">
+        <img class="gallery-modal-image" data-gallery-lightbox-image alt="" />
+        <p class="gallery-modal-caption" data-gallery-lightbox-caption></p>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <p>© 2024 <span class="name-en">Tsukumo Tsuguhiro</span> / 白 承容. Crafted with clarity and curiosity.</p>
+      <a href="index.html">Back to portfolio</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
