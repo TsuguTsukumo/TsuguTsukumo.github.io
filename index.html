@@ -3,412 +3,268 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Tsukumo Tsuguhiro | Research Portfolio</title>
+    <title>Research Portfolio | PhD Student</title>
     <meta
       name="description"
-      content="白 承容 / Tsukumo Tsuguhiro の研究ポートフォリオ。医用AI、歩行解析、疾患判別に関する研究・発表・プロジェクトをまとめた1ページサイト。"
+      content="博士課程学生のための自己紹介ポートフォリオ。研究テーマ、成果、活動、連絡先を美しくまとめた1ページサイト。"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@400;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,600;9..144,800&family=Space+Grotesk:wght@300;400;500;600&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="ambient-grid" aria-hidden="true"></div>
-    <div class="page-orb orb-a" aria-hidden="true"></div>
-    <div class="page-orb orb-b" aria-hidden="true"></div>
-
-    <header class="site-header" id="top">
-      <nav class="site-nav" aria-label="Main navigation">
-        <a class="brand" href="#top">
-          <span class="brand-mark">TT</span>
-          <span>
-            <strong>Tsukumo Tsuguhiro</strong>
-            <small>Medical AI / Gait Analytics</small>
-          </span>
-        </a>
-
+    <div class="noise"></div>
+    <header class="hero" id="top">
+      <nav class="nav">
+        <div class="brand">白 承容 / Tsukumo Tsuguhiro</div>
         <div class="nav-links">
           <a href="#research">Research</a>
-          <a href="#publications">Archive</a>
+          <a href="#publications">Publications</a>
           <a href="#projects">Projects</a>
-          <a class="button button-nav" href="#contact">Contact</a>
+          <a href="#contact" class="btn">Contact</a>
         </div>
       </nav>
 
-      <section class="hero">
-        <div class="hero-copy" data-animate>
-          <p class="eyebrow">Doctoral Student · University of Tsukuba / Life Engineering Lab</p>
-
-          <div class="signal-row" aria-hidden="true">
-            <span class="signal-dot"></span>
-            <span class="signal-dot"></span>
-            <span class="signal-dot"></span>
-            <span class="signal-dot"></span>
-            <span class="signal-dot"></span>
-            <span class="signal-dot"></span>
-            <span class="signal-dot"></span>
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">博士後期課程1年 · 筑波大学 / ライフエンジニアリング研究室</p>
+          <div class="photo-placeholder hero-photo" aria-label="Portrait">
+            <img src="IMG_1524.jpeg" alt="白 承容 / Tsukumo Tsuguhiro" />
           </div>
-
-          <p class="nameplate">白 承容 / Tsukumo Tsuguhiro</p>
-
-          <h1 class="hero-title">
-            歩行を<span class="accent">読み解き</span>、
-            <br />
-            臨床に届く
-            <span class="serif-line">医用AIへ。</span>
+          <h1>
+            白 承容 / Tsukumo Tsuguhiro
+            <span class="accent">Portfolio</span>
           </h1>
-
-          <p class="hero-lead">
-            歩行計測データから疾患判別を行う研究に取り組んでいます。深層学習、
-            説明可能性、実装可能性を横断しながら、実社会で役立つ診断支援へ接続することが現在のテーマです。
+          <p class="lead">
+            医用AIを軸に、歩行計測データから疾患判別を行う研究に取り組んでいます。
+            実社会で役立つ診断支援を目指して、説明可能性と臨床実装性を重視しています。
           </p>
-
           <div class="cta-row">
-            <a class="button button-primary" href="#contact">共同研究の相談</a>
-            <a class="button button-secondary" href="#publications">成果を見る</a>
+            <a class="btn primary" href="#contact">共同研究の相談</a>
+            <a class="btn ghost" href="#publications">論文リストを見る</a>
           </div>
-
-          <dl class="hero-facts">
+          <div class="hero-meta">
             <div>
-              <dt>Research Focus</dt>
-              <dd>医用AI / 歩行解析 / 疾患判別</dd>
+              <span class="meta-label">Research Focus</span>
+              <span class="meta-value">医用AI / 歩行解析 / 疾患判別</span>
             </div>
             <div>
-              <dt>Affiliation</dt>
-              <dd>
-                <a href="https://www.lelab.jp/" target="_blank" rel="noreferrer">Life Engineering Lab</a>
-              </dd>
+              <span class="meta-label">Based In</span>
+              <span class="meta-value"><a class="title-link" href="https://www.lelab.jp/" target="_blank" rel="noreferrer">Life Engineering Lab</a></span>
             </div>
-            <div>
-              <dt>Status</dt>
-              <dd>PhD Year 1 · Updated 2026-04</dd>
-            </div>
-          </dl>
-
-          <ul class="achievement-strip">
-            <li>
-              <span class="achievement-label">Paper</span>
-              <strong>IEEE EMBC 2025</strong>
-            </li>
-            <li>
-              <span class="achievement-label">Award</span>
-              <strong>優秀論文発表賞 2024</strong>
-            </li>
-            <li>
-              <span class="achievement-label">Media</span>
-              <strong>NHK World</strong>
-            </li>
-          </ul>
+          </div>
         </div>
 
-        <aside class="hero-visual" data-animate>
-          <figure class="portrait-shell">
-            <div class="portrait-frame">
-              <img src="IMG_1524.jpeg" alt="白 承容 / Tsukumo Tsuguhiro" />
-            </div>
-            <figcaption class="portrait-caption">
-              Portrait / University of Tsukuba
-            </figcaption>
-          </figure>
-
-          <div class="focus-card">
-            <p class="focus-label">Current Focus</p>
-            <h2>Gait-based Disease Classification</h2>
+        <div class="hero-card" aria-hidden="true">
+          <div class="orb"></div>
+          <div class="card">
+            <p class="card-title">Now Exploring</p>
             <ul>
-              <li>Dual-view video からの疾患判別</li>
-              <li>説明可能な医用AI設計</li>
-              <li>臨床利用を見据えた評価設計</li>
+              <li>歩行からの疾患判別モデル</li>
+              <li>医用AIの説明可能性</li>
+              <li>臨床現場への実装検討</li>
             </ul>
+            <div class="card-footer">
+              <span>Last update</span>
+              <span>2024 / 06</span>
+            </div>
           </div>
-        </aside>
-      </section>
+        </div>
+      </div>
     </header>
-
-    <div class="section-divider" aria-hidden="true">
-      <span>Research Dossier</span>
-    </div>
 
     <main>
       <section class="section" id="research">
-        <div class="section-heading" data-animate>
-          <p class="eyebrow">Research Architecture</p>
-          <h2>歩行データから臨床価値を引き出す。</h2>
+        <div class="section-head" data-animate>
+          <p class="eyebrow">Research Vision</p>
+          <h2>歩行解析で社会に貢献する。</h2>
           <p>
-            研究の中心にあるのは、歩行から得られる身体情報を臨床に還元することです。
-            時系列解析と深層学習を組み合わせ、早期発見や診断支援につながる手法を設計しています。
+            研究の軸は「歩行から得られる身体情報を、臨床に活かすこと」。
+            医用AIと時系列解析を組み合わせ、疾患の早期発見に貢献する手法を探究しています。
           </p>
         </div>
-
-        <div class="research-grid">
-          <article class="research-note" data-animate>
-            <p class="note-label">Research Statement</p>
-            <blockquote>
-              「歩行」は見過ごされがちな生体信号ですが、疾患の兆候を静かに含んでいます。
-              その微細な差異を、説明できるAIとして捉えることが目標です。
-            </blockquote>
-            <div class="note-meta">
-              <span>Markerless video</span>
-              <span>Deep learning</span>
-              <span>Clinical translation</span>
-            </div>
-          </article>
-
-          <div class="pillar-grid">
-            <article class="pillar" data-animate>
-              <p class="pillar-index">01</p>
-              <h3>Gait Analytics</h3>
-              <p>
-                歩行計測データの時系列特徴を抽出し、疾患の兆候を捉える解析手法を構築しています。
-              </p>
-            </article>
-
-            <article class="pillar" data-animate>
-              <p class="pillar-index">02</p>
-              <h3>Medical AI</h3>
-              <p>
-                予測性能だけでなく、医療現場で解釈しやすい説明可能性を備えたモデル設計に注力しています。
-              </p>
-            </article>
-
-            <article class="pillar" data-animate>
-              <p class="pillar-index">03</p>
-              <h3>Clinical Deployment</h3>
-              <p>
-                実データでの検証や運用設計を通じて、早期発見やリハビリ支援に接続できる実装を目指しています。
-              </p>
-            </article>
+        <div class="pill-grid" data-animate>
+          <div class="pill">
+            <h3>Gait Analytics</h3>
+            <p>
+              歩行計測データの時系列特徴を抽出し、疾患の兆候を捉える解析手法を開発。
+            </p>
           </div>
-        </div>
-
-        <div class="signal-band" data-animate>
-          <div class="signal-band-head">
-            <p class="signal-caption">Signal Trace</p>
-            <p>歩行動画 / 時系列特徴 / 疾患判別 / 説明可能性</p>
+          <div class="pill">
+            <h3>Medical AI</h3>
+            <p>
+              医療現場で活用可能な予測モデルの設計と、説明可能性の向上に注力。
+            </p>
           </div>
-          <div class="signal-bars" aria-hidden="true">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
+          <div class="pill">
+            <h3>Clinical Impact</h3>
+            <p>
+              実データでの検証を通じ、早期発見やリハビリ支援につながる実装を目指す。
+            </p>
           </div>
         </div>
       </section>
 
-      <section class="section archive-section" id="publications">
-        <div class="archive-layout">
-          <aside class="archive-sidebar" data-animate>
-            <p class="eyebrow">Archive</p>
-            <h2>論文・発表・記録</h2>
-            <p>
-              研究成果は、論文・学会発表・受賞・メディア掲載という形で少しずつ蓄積しています。
-              ここでは現在公開している主要なアウトプットをまとめています。
-            </p>
-
-            <ul class="archive-highlights">
-              <li>
-                <span>1</span>
-                査読付き国際会議論文
-              </li>
-              <li>
-                <span>3</span>
-                学会発表
-              </li>
-              <li>
-                <span>2</span>
-                受賞・メディア掲載
-              </li>
-            </ul>
-          </aside>
-
-          <div class="archive-stream">
-            <article class="publication-entry" data-animate>
-              <div class="entry-year">2025</div>
-              <div class="entry-body">
-                <p class="entry-label">Selected Publication</p>
-                <h3>
-                  <a
-                    href="https://ieeexplore.ieee.org/abstract/document/11254342"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Spinal Disease Classification Using Deep Learning on Dual-View Videos
-                  </a>
-                </h3>
-                <p>
-                  T. Tsukumo, K. Chen, T. Asada, K. Miura, H. Kadone, K. Sakashita,
-                  T. Sunami, M. Yamazaki, N. Ienaga, Y. Kuroda
-                </p>
-                <p>
-                  47th Annual International Conference of the IEEE Engineering in Medicine and Biology Society ·
-                  Copenhagen · July 2025
-                </p>
-              </div>
-            </article>
-
-            <section class="archive-cluster" data-animate>
-              <div class="cluster-head">
-                <p class="entry-label">Presentations</p>
-                <h3>Recent Talks & Conference Presentations</h3>
-              </div>
-
-              <div class="timeline">
-                <article class="timeline-item">
-                  <div class="timeline-date">
-                    <span class="year">2025</span>
-                    <span class="month">Jul</span>
-                  </div>
-                  <div>
-                    <h4>Spinal Disease Classification Using Deep Learning on Dual-View Videos</h4>
-                    <p>
-                      47th Annual International Conference of the IEEE Engineering in Medicine and Biology Society ·
-                      Copenhagen
-                    </p>
-                  </div>
-                </article>
-
-                <article class="timeline-item">
-                  <div class="timeline-date">
-                    <span class="year">2025</span>
-                    <span class="month">Mar</span>
-                  </div>
-                  <div>
-                    <h4>Construction of an ASD classification neural network from two directional videos</h4>
-                    <p>Biological Imaging and Medical AI - JSMBE · Ikoma, Nara</p>
-                  </div>
-                </article>
-
-                <article class="timeline-item">
-                  <div class="timeline-date">
-                    <span class="year">2024</span>
-                    <span class="month">Nov</span>
-                  </div>
-                  <div>
-                    <h4>歩行時の揺動情報を含む正面動画を用いた深層学習による脊椎疾患分類</h4>
-                    <p>日本生体医工学会 関東支部 若手研究者発表会2024 · つくば</p>
-                  </div>
-                </article>
-              </div>
-            </section>
-
-            <div class="recognition-grid">
-              <article class="recognition-card" data-animate>
-                <p class="entry-label">Award</p>
-                <h3>優秀論文発表賞</h3>
-                <p>日本生体医工学会 関東支部 若手研究者発表会 · 2024年11月</p>
-              </article>
-
-              <article class="recognition-card" data-animate>
-                <p class="entry-label">Media</p>
-                <h3>
-                  <a
-                    href="https://www3.nhk.or.jp/nhkworld/en/shows/2050182/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    NHK World / Medical Frontiers
-                  </a>
-                </h3>
-                <p>研究紹介番組で取り上げられました。</p>
-              </article>
+      <section class="section" id="publications">
+        <div class="section-head" data-animate>
+          <p class="eyebrow">Publications</p>
+          <h2>論文</h2>
+        </div>
+        <div class="timeline" data-animate>
+          <div class="timeline-item">
+            <span class="year">2025</span>
+            <div>
+              <h3><a class="title-link" href="https://ieeexplore.ieee.org/abstract/document/11254342" target="_blank" rel="noreferrer">Spinal Disease Classification Using Deep Learning on Dual-View Videos</a></h3>
+              <p>T. Tsukumo, K. Chen, T. Asada, K. Miura, H. Kadone, K. Sakashita, T. Sunami, M. Yamazaki, N. Ienaga, Y. Kuroda</p>
+              <p>47th Annual International Conference of the IEEE Engineering in Medicine and Biology Society · 5 pages · コペンハーゲン · 2025年7月</p>
             </div>
           </div>
         </div>
+        <div class="section-action">
+          <a class="btn ghost" href="#contact">全論文リストを送る</a>
+        </div>
       </section>
 
-      <section class="section section-alt" id="projects">
-        <div class="section-heading" data-animate>
-          <p class="eyebrow">Experimental Lab</p>
-          <h2>研究と実装のあいだにあるプロトタイプ。</h2>
+      <section class="section alt" id="projects">
+        <div class="section-head" data-animate>
+          <p class="eyebrow">Projects</p>
+          <h2>実験プロジェクト</h2>
           <p>
-            学術研究と並行して、モデル精度向上、データ生成、社会実装に向けた設計を進めています。
-            研究成果を現場へ近づけるための実験群です。
+            学術研究と並行して、実験的なプロトタイプや社会実装を進めています。
           </p>
         </div>
-
-        <div class="project-grid">
-          <article class="project project-feature" data-animate>
-            <p class="project-kicker">Featured Study</p>
-            <h3>Dual-view Video Disease Classification</h3>
+        <div class="project-grid" data-animate>
+          <article class="project">
+            <h3>深層学習モデルの構築・高精度化</h3>
             <p>
-              2方向の歩行動画から疾患判別を行う深層学習モデルを設計し、
-              精度と汎化性能の両立を目指しています。
+              歩行動画から疾患判別を行うための深層学習モデルを設計し、
+              精度と汎化性能の向上に取り組んでいます。
             </p>
-            <div class="project-tags">
-              <span>Deep Learning</span>
-              <span>Video Analysis</span>
-              <span>Clinical AI</span>
-            </div>
+            <span class="tag">Deep Learning</span>
           </article>
-
-          <article class="project" data-animate>
-            <p class="project-kicker">Data Expansion</p>
+          <article class="project">
             <h3>歩行データ生成</h3>
             <p>
-              実測データに加え、合成データ生成による拡張で学習の安定化と多様性の確保に取り組んでいます。
+              実計測データに加えて、合成データ生成によるデータ拡張で
+              学習の安定化と多様性の確保を目指しています。
             </p>
-            <div class="project-tags">
-              <span>Gait Data</span>
-              <span>Augmentation</span>
-            </div>
+            <span class="tag">Gait Data</span>
           </article>
-
-          <article class="project project-dark" data-animate>
-            <p class="project-kicker">Deployment</p>
-            <h3>社会空間で使える評価設計</h3>
+          <article class="project">
+            <h3>社会空間における実装</h3>
             <p>
-              臨床や社会空間での利用を見据え、運用可能なUIと評価プロトコルの設計を進めています。
+              臨床や社会空間での利用を想定し、運用可能なUIと
+              評価プロトコルの構築を進めています。
             </p>
-            <div class="project-links">
-              <a href="https://github.com/TsuguTsukumo" target="_blank" rel="noreferrer">GitHub</a>
-            </div>
+            <span class="tag">Deployment</span>
           </article>
         </div>
       </section>
 
-      <section class="section contact-section" id="contact">
-        <div class="contact-panel" data-animate>
-          <div class="contact-copy">
-            <p class="eyebrow">Contact</p>
-            <h2>共同研究やプロジェクトの相談を歓迎しています。</h2>
-            <p>
-              医用AI、歩行解析、診断支援、研究実装に関する相談があれば気軽にご連絡ください。
-              学術・産学連携のどちらでも対応可能です。
-            </p>
-            <a class="contact-mail" href="mailto:s2630235@u.tsukuba.ac.jp">s2630235@u.tsukuba.ac.jp</a>
+      <section class="section" id="presentations">
+        <div class="section-head" data-animate>
+          <p class="eyebrow">Presentations</p>
+          <h2>発表歴</h2>
+        </div>
+        <div class="timeline" data-animate>
+          <div class="timeline-item">
+            <div class="year-block">
+              <span class="year">2025</span>
+              <span class="month">Jul</span>
+            </div>
+            <div>
+              <h3>Spinal Disease Classification Using Deep Learning on Dual-View Videos</h3>
+              <p>T. Tsukumo, K. Chen, T. Asada, K. Miura, H. Kadone, K. Sakashita, T. Sunami, M. Yamazaki, N. Ienaga, Y. Kuroda</p>
+              <p>47th Annual International Conference of the IEEE Engineering in Medicine and Biology Society · コペンハーゲン · 2025年7月</p>
+            </div>
           </div>
+          <div class="timeline-item">
+            <div class="year-block">
+              <span class="year">2025</span>
+              <span class="month">Mar</span>
+            </div>
+            <div>
+              <h3>Construction of an ASD classification neural network from two directional videos</h3>
+              <p>T. Tsukumo, K. Chen, T. Asada, K. Miura, H. Kadone, K. Sakashita, T. Sunami, M. Yamazaki, N. Ienaga, Y. Kuroda</p>
+              <p>Biological Imaging and Medical AI - JSMBE · 奈良県生駒市 · 2025年3月</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="year-block">
+              <span class="year">2024</span>
+              <span class="month">Nov</span>
+            </div>
+            <div>
+              <h3>歩行時の揺動情報を含む正面動画を用いた深層学習による脊椎疾患分類</h3>
+              <p>白承容, 陳凱旭, 朝田智之, 三浦紘世, 門根秀樹, 坂下孝太郎, 角南貴大, 山崎正志, 家永直人, 黒田嘉宏</p>
+              <p>日本生体医工学会 関東支部 若手研究者発表会2024 · 茨城県つくば市 · 2024年11月</p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-          <div class="contact-details">
-            <article>
-              <p class="detail-label">Lab</p>
-              <a href="https://www.lelab.jp/" target="_blank" rel="noreferrer">Life Engineering Lab</a>
-            </article>
-            <article>
-              <p class="detail-label">GitHub</p>
-              <a href="https://github.com/TsuguTsukumo" target="_blank" rel="noreferrer">github.com/TsuguTsukumo</a>
-            </article>
-            <article>
-              <p class="detail-label">Primary Topics</p>
-              <span>Medical AI / Gait Analysis / Disease Classification</span>
-            </article>
-            <article>
-              <p class="detail-label">Best For</p>
-              <span>共同研究、講演、研究実装の相談</span>
-            </article>
+      <section class="section" id="awards">
+        <div class="section-head" data-animate>
+          <p class="eyebrow">Awards</p>
+          <h2>受賞歴</h2>
+        </div>
+        <div class="timeline" data-animate>
+          <div class="timeline-item">
+            <span class="year">2024</span>
+            <div>
+              <h3>優秀論文発表賞</h3>
+              <p>日本生体医工学会 関東支部 若手研究者発表会 · 2024年11月</p>
+            </div>
           </div>
+        </div>
+      </section>
+
+      <section class="section" id="media">
+        <div class="section-head" data-animate>
+          <p class="eyebrow">Media</p>
+          <h2>メディアでの研究紹介</h2>
+        </div>
+        <div class="timeline" data-animate>
+          <div class="timeline-item">
+            <span class="year">NHK World</span>
+            <div>
+              <h3><a class="title-link" href="https://www3.nhk.or.jp/nhkworld/en/shows/2050182/" target="_blank" rel="noreferrer">Medical Frontiers</a></h3>
+              <p>研究紹介番組で取り上げられました。</p>
+              <p class="media-link"><a class="btn ghost" href="https://www3.nhk.or.jp/nhkworld/en/shows/2050182/" target="_blank" rel="noreferrer">NHK Worldで視聴</a></p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      
+
+      <section class="section contact" id="contact">
+        <div class="section-head" data-animate>
+          <p class="eyebrow">Contact</p>
+                    <p>
+            共同研究、講演、プロジェクトのご相談など、お気軽にご連絡ください。
+          </p>
+        </div>
+        <div class="contact-card" data-animate>
+          <div>
+            <p class="meta-label">Email</p>
+            <p class="meta-value">s2630235@u.tsukuba.ac.jp</p>
+          </div>
+          <div>
+            <p class="meta-label">Links</p>
+            <p class="meta-value"><a class="title-link" href="https://github.com/TsuguTsukumo" target="_blank" rel="noreferrer">GitHub</a></p>
+          </div>
+          <a class="btn primary" href="mailto:s2630235@u.tsukuba.ac.jp">メールする</a>
         </div>
       </section>
     </main>
 
-    <footer class="site-footer">
-      <p>© 2026 白 承容 / Tsukumo Tsuguhiro. Built as a research dossier.</p>
+    <footer class="footer">
+      <p>© 2024 白 承容 / Tsukumo Tsuguhiro. Crafted with clarity and curiosity.</p>
       <a href="#top">Back to top</a>
     </footer>
 
