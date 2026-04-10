@@ -125,6 +125,18 @@ body {
   margin-top: 18px;
 }
 
+.photo-placeholder {
+  width: 160px;
+  height: 200px;
+  border: 2px dashed var(--border);
+  border-radius: 16px;
+  display: grid;
+  place-items: center;
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin: 18px 0 10px;
+}
+
 .meta-label {
   font-size: 0.8rem;
   color: var(--muted);
