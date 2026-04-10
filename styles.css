@@ -221,9 +221,19 @@ body {
   border: 1px solid var(--border);
 }
 
+.year-block {
+  display: grid;
+  gap: 4px;
+}
+
 .year {
   font-weight: 600;
   color: var(--accent);
+}
+
+.month {
+  font-size: 0.75rem;
+  color: var(--muted);
 }
 
 .section-action {
