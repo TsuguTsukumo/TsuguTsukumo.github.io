@@ -62,7 +62,7 @@ body {
 }
 
 .btn {
-  border: 1.5px solid var(--border);
+  border: 2px solid var(--border);
   padding: 10px 18px;
   border-radius: 999px;
   text-decoration: none;
@@ -148,7 +148,7 @@ body {
   background: var(--card);
   border-radius: var(--radius);
   padding: 24px;
-  border: 1.5px solid var(--border);
+  border: 2px solid var(--border);
 }
 
 .card-title {
@@ -203,7 +203,7 @@ body {
   background: var(--card);
   border-radius: 18px;
   padding: 20px;
-  border: 1.5px solid var(--border);
+  border: 2px solid var(--border);
 }
 
 .timeline {
@@ -218,7 +218,7 @@ body {
   padding: 18px 20px;
   border-radius: 16px;
   background: var(--card);
-  border: 1.5px solid var(--border);
+  border: 2px solid var(--border);
 }
 
 .year-block {
@@ -254,10 +254,10 @@ body {
 #presentations .timeline::before {
   content: "";
   position: absolute;
-  left: 34px;
+  left: 35px;
   top: 18px;
   bottom: 18px;
-  width: 1.5px;
+  width: 2px;
   background: var(--border);
 }
 
@@ -287,7 +287,7 @@ body {
   background: var(--card);
   border-radius: 18px;
   padding: 22px;
-  border: 1.5px solid var(--border);
+  border: 2px solid var(--border);
   display: grid;
   gap: 12px;
 }
@@ -312,7 +312,7 @@ body {
   background: var(--card);
   border-radius: var(--radius);
   padding: 24px;
-  border: 1.5px solid var(--border);
+  border: 2px solid var(--border);
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
