@@ -225,35 +225,6 @@ body {
   display: grid;
   gap: 2px;
   justify-items: center;
-  position: relative;
-  padding-bottom: 18px;
-}
-
-.timeline-item:last-child .year-block {
-  padding-bottom: 0;
-}
-
-.year-block::before {
-  content: "";
-  width: 10px;
-  height: 10px;
-  border-radius: 999px;
-  background: #ffffff;
-  border: 2px solid var(--accent);
-  box-shadow: 0 0 0 3px rgba(210, 108, 47, 0.08);
-  margin-bottom: 4px;
-}
-
-.year-block::after {
-  content: "";
-  width: 2px;
-  height: 18px;
-  background: var(--border);
-  margin-top: 6px;
-}
-
-.timeline-item:last-child .year-block::after {
-  display: none;
 }
 
 .year {
@@ -265,6 +236,32 @@ body {
   font: inherit;
   font-weight: 600;
   color: var(--accent);
+}
+
+#presentations .timeline {
+  position: relative;
+}
+
+#presentations .timeline-item {
+  position: relative;
+}
+
+#presentations .timeline-item::before {
+  content: "";
+  position: absolute;
+  left: 34px;
+  top: -20px;
+  bottom: -20px;
+  width: 2px;
+  background: var(--border);
+}
+
+#presentations .timeline-item:first-child::before {
+  top: 18px;
+}
+
+#presentations .timeline-item:last-child::before {
+  bottom: 18px;
 }
 
 .section-action {
