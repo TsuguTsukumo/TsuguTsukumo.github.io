@@ -226,6 +226,8 @@ body {
   gap: 2px;
   justify-items: center;
   width: 70px;
+  text-align: center;
+  font-variant-numeric: tabular-nums;
 }
 
 .year {
